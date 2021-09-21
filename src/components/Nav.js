@@ -3,9 +3,9 @@ import { Nav } from 'react-bootstrap'
 
 function NavBar() {
   return (
-    <Nav>
+    <Nav className='header'>
       <Nav.Item>
-        Pics or it didn't NASAppen
+        Pics or it didn't happeN.A.S.A.
       </Nav.Item>
     </Nav>
   )
