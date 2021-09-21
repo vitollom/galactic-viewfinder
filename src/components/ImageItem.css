@@ -1,0 +1,19 @@
+.card {
+  width: 80%;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.card-image {
+  padding: 5px;
+}
