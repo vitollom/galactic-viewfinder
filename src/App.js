@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import NavBar from './components/Nav'
-// import ImageItem from './components/ImageItem'
-// import { CaretRightFilled, CaretLeftFilled } from '@ant-design/icons'
 import Main from './views/Main'
 import Footer from './components/Footer'
 import { getSpecificImage } from './requests/Requests'
@@ -53,7 +51,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Main photo={photo} number={number} back={incrementDate} next={decrementDate} number={number} />
+      <Main photo={photo} number={number} back={incrementDate} next={decrementDate} />
       <Footer />
     </div>
   );

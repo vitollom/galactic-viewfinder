@@ -7,7 +7,9 @@ function Main(props) {
     <div className='main'>
       <div className='left'>
         Back
-        <CaretLeftFilled onClick={props.back} />
+        {
+          props.number !== 0 ? <CaretLeftFilled onClick={props.back} /> : <CaretLeftFilled />
+        }
       </div>
       <ImageItem photo={props.photo} liked={props.liked} setLiked={props.setLiked} number={props.number} />
       <div className='right'>

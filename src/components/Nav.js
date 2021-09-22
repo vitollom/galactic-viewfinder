@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <Nav className='header'>
       <Nav.Item>
-        Pics or it didn't happeN.A.S.A.
+        Galactic Viewfinder
       </Nav.Item>
     </Nav>
   )

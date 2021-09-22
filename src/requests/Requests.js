@@ -1,11 +1,5 @@
-const apiKey = 'um4GgBr7BLCrvW8mv4PL3LolOKeVEVbprTrpOfWq'
+const apiKey = process.env.REACT_APP_NASA_API_KEY
 const baseURL = 'https://api.nasa.gov/planetary/apod'
-
-export async function getTodaysImage() {
-  return await fetch(`${baseURL}?api_key=${apiKey}`, {
-    method: 'GET',
-  }).then((res) => res.json())
-} 
 
 export async function getSpecificImage(date) {
   return await fetch(`${baseURL}?api_key=${apiKey}&date=${date}`, {
