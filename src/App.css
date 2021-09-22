@@ -29,3 +29,14 @@ div.footer.nav {
 div.signature.nav-item {
   padding: .5rem 1rem;
 }
+
+div.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span.anticon svg {
+  width: 50px;
+  height: 50px;
+}
