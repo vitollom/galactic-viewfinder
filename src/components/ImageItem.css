@@ -23,3 +23,8 @@
 .card-image {
   padding: 5px;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}

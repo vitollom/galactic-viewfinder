@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import { Card } from 'react-bootstrap'
 import { HeartOutlined, HeartFilled } from '@ant-design/icons'
+import ReactPlayer from 'react-player'
 import './ImageItem.css'
 
 const ImageItem = ({
-  photo: { title, url, explanation, copyright, date }, 
+  photo: { title, url, explanation, copyright, date, media_type },
   number,
 }) => {
   const [liked, setLiked] = useState(false)
 
   useEffect(() => {
     setLiked(false)
+    console.log(media_type)
   }, [number])
 
   return (
@@ -21,7 +23,15 @@ const ImageItem = ({
           {date}
         </h4>
       </Card.Header>
-      <Card.Img className='card-image' src={url} alt={explanation}></Card.Img>
+      {
+        media_type === 'video'
+          ?
+          <Card.Body className='video-container'>
+            <ReactPlayer className='video-embed' url={url} />
+          </Card.Body>
+          :
+          <Card.Img className='card-image' src={url} alt={explanation}></Card.Img>
+      }
       <Card.Body className='card-body'>{explanation}</Card.Body>
       <Card.Footer className='card-footer'>
         {
