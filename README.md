@@ -20,5 +20,4 @@ npm start
 
 ## Technologies Used
 
-React.js (React Bootstrap, Ant Design, React Player)
-NASA Astronomy Picture of the Day API
+React.js (React Bootstrap, Ant Design, React Player), NASA Astronomy Picture of the Day API
