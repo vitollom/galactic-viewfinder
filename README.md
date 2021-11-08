@@ -1,6 +1,6 @@
 # Galactic Viewfinder
 
-Galactic Viewfinder is an app the uses React.js and React Bootstrap as well as calls to the NASA Astronomy Picture of The Day API to display photos of all sorts of wild astronomical images.
+Galactic Viewfinder is an app the uses React.js and React Bootstrap as well as calls to the NASA Astronomy Picture of The Day API to display photos of all sorts of wild astronomical images and videos.
 
 ## Getting Started
 
